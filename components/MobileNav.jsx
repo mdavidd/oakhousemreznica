@@ -23,6 +23,11 @@ const links = [
 
 const MobileNav = ({ setMobileNav }) => {
   const pathname = usePathname();
+
+  const handleLinkClick = () => {
+    setMobileNav(false);
+  };
+
   return (
     <nav className="relative flex flex-col justify-between h-full p-8">
       <div
@@ -32,19 +37,18 @@ const MobileNav = ({ setMobileNav }) => {
         <IoCloseOutline className="text-4xl" />
       </div>
       <ul className="flex flex-col gap-10 text-white text-xl">
-        {links.map((link, index) => {
-          return (
+        {links.map((link, index) => (
+          <li key={index} onClick={handleLinkClick}>
             <Link
               href={link.href}
-              key={index}
               className={`${
                 pathname === link.href && "border-b-2 border-accent"
               } uppercase max-w-max mx-auto`}
             >
               {link.name}
             </Link>
-          );
-        })}
+          </li>
+        ))}
       </ul>
       <Socials containerStyles="text-white text-lg flex gap-6 justify-center" />
     </nav>
