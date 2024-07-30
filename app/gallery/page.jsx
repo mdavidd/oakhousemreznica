@@ -11,7 +11,7 @@ const GalleryPage = () => {
     const fetchImages = async () => {
       try {
         const res = await fetch("/api/images");
-
+        const data = await res.json();
         setPhotos(data);
       } catch (error) {
         console.error("Error fetching images:", error);
@@ -27,7 +27,7 @@ const GalleryPage = () => {
   }
 
   return (
-    <div className="container mx-auto pt-24">
+    <div className="container mx-auto pt-32 mt-32">
       {photos.length > 0 ? <PhotoGallery photos={photos} /> : <p>Loading...</p>}
     </div>
   );
