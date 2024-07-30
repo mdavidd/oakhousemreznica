@@ -110,3 +110,35 @@ h1 {
   max-width: 80vw;
   margin: auto;
 }
+
+.image-slider-container {
+  margin-top: 64px;
+  /* Adjust according to your header height */
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  header .bg-secondary-100 {
+    padding: 0.5rem 0;
+  }
+
+  header .container.mx-auto.flex.items-center.justify-between.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header .w-24.h-24 {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header .flex.items-center.gap-2.text-white.text-sm {
+    font-size: 0.875rem;
+    /* Adjust to your desired size */
+  }
+
+  header .cursor-pointer {
+    padding: 0.5rem;
+  }
+}

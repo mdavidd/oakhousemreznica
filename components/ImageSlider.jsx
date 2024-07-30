@@ -17,7 +17,7 @@ const ImageSlider = () => {
 
   return (
     <Slider {...settings}>
-      <div className="relative w-full h-[500px] xl:h-[650px] flex justify-center items-center">
+      <div className="relative w-full h-[400px] xl:h-[400px] flex justify-center items-bottom">
         <Image
           src="/assets/home/1.jpeg"
           fill
@@ -25,7 +25,7 @@ const ImageSlider = () => {
           alt="Image 1"
         />
       </div>
-      <div className="relative w-full h-[500px] xl:h-[650px] flex justify-center items-center">
+      <div className="relative w-full h-[400px] xl:h-[400px] flex justify-center items-bottom">
         <Image
           src="/assets/home/2.jpeg"
           fill
@@ -33,7 +33,7 @@ const ImageSlider = () => {
           alt="Image 2"
         />
       </div>
-      <div className="relative w-full h-[500px] xl:h-[650px] flex justify-center items-center">
+      <div className="relative w-full h-[400px] xl:h-[400px] flex justify-center items-bottom">
         <Image
           src="/assets/home/3.jpeg"
           fill
@@ -41,7 +41,7 @@ const ImageSlider = () => {
           alt="Image 3"
         />
       </div>
-      <div className="relative w-full h-[500px] xl:h-[650px] flex justify-center items-center">
+      <div className="relative w-full h-[400px] xl:h-[400px] flex justify-center items-bottom">
         <Image
           src="/assets/home/4.jpeg"
           fill

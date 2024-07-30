@@ -12,16 +12,16 @@ const links = [
     name: "Home",
   },
   {
-    href: "/about",
-    name: "About",
+    href: "/gallery",
+    name: "Gallery",
   },
   {
-    href: "/treatments",
-    name: "Treatments",
+    href: "/location",
+    name: "Near By",
   },
   {
     href: "/contact",
-    name: "Contact",
+    name: "Book & Location",
   },
 ];
 

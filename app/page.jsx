@@ -58,8 +58,8 @@ const Home = () => {
             </div>
           </motion.div>
           {/* image */}
-          <div className="flex-1 flex justify-center items-center xl:ml-8">
-            <div className="w-full max-w-2xl">
+          <div className="flex-1 flex justify-center items-center xl:ml-8 mt-16">
+            <div className="w-full max-w-xl relative z-10 image-slider-container">
               <ImageSlider />
             </div>
           </div>
