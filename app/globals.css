@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@layer base {
+  body {
+    @apply font-secondary bg-secondary text-base text-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary;
+  }
+
+  .h1 {
+    @apply text-[64px] leading-none xl:text-[72px] xl:leading-[76px];
+  }
+
+  .h2 {
+    @apply text-[48px] leading-[54px];
+  }
+
+  .h3 {
+    @apply text-[36px] leading-[48px];
+  }
+
+  .h4 {
+    @apply text-xl;
+  }
+
+  .lead {
+    @apply text-lg mb-8;
+  }
+
+  a {
+    @apply font-primary;
+  }
+}
+
+.btn {
+  @apply bg-accent min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-primary uppercase tracking-[1px] h-[58px] pl-8 pr-6 flex items-center justify-center text-white;
+}
+
+.input {
+  @apply h-[54px] bg-white rounded-full px-6;
+}
+
+.textarea {
+  @apply h-[120px] rounded-[20px] px-6 pt-4 resize-none;
+}
+
+.input,
+.textarea {
+  @apply outline-none ring-1 ring-accent/80 focus:ring-1 focus:ring-accent font-primary text-sm uppercase placeholder:text-primary text-primary;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6347;
+}
+
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  margin: 5px;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Center the images in the modal */
+.react-images__view-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 80vh;
+  max-width: 80vw;
+  margin: auto;
+}
