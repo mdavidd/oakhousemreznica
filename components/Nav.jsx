@@ -14,11 +14,7 @@ const links = [
   },
   {
     href: "/location",
-    name: "Near By",
-  },
-  {
-    href: "/contact",
-    name: "Book & Location",
+    name: "Near By & Book",
   },
 ];
 
